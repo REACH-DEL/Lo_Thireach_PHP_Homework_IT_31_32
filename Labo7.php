@@ -29,7 +29,6 @@
             return pi() * ($this->getRadius() ** 2) * $this->height;
         }
         public function getArea(){
-
             return 2* pi() * ($this->getRadius()**2)+ 2 * pi() * $this->getRadius() * $this->height;
         }
         public function toString(){

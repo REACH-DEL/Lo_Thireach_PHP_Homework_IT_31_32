@@ -19,7 +19,7 @@
             return $this->length * $this->width;
         }
         public function toString(): string{
-            return "Rectangle[Width={$this->width}, Length={$this->length}, Width={$this->getArea()}]";
+            return "Rectangle[Width={$this->width}, Length={$this->length}, Area={$this->getArea()}]";
         }
     }
     class Triangle extends Shap{
@@ -35,11 +35,11 @@
             return ($this->base * $this->height)/2;
         }
         public function toString(): string{
-            return "Triangle[Base={$this->base}, Height={$this->height}, Width={$this->getArea()}]";
+            return "Triangle[Base={$this->base}, Height={$this->height}, Area={$this->getArea()}]";
         }
     }
     $rectangle = new Rectangle("Red", 2, 3);
     $triangle = new Triangle("blue", 2, 4);
     echo "Rectangle: " . $rectangle->toString()."</br>";
-    echo "Rectangle: " . $triangle->toString();
+    echo "Triangle: " . $triangle->toString();
 ?>
